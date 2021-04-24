@@ -8,9 +8,11 @@ body {
   height: 100vh;
   margin: 0;
 }
+
 #root{
   height: 100%;
 }
+
 .grid-container{
   display: grid;
   grid-template-areas: 
@@ -82,7 +84,7 @@ a:hover {
 .products li {
   list-style-type: none;
   padding: 0;
-  flex: 0 1 34rem;
+  flex: 0 1 35rem;
   margin: 1rem;
   height: 50rem;
   border-bottom: .1rem #c0c0c0 solid;
