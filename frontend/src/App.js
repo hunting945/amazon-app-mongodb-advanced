@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import './App.css';
+import CartScreen from './Screens/CartScreen';
 import HomeScreen from './Screens/HomeScreen';
 import ProductScreen from './Screens/ProductScreen';
 
@@ -9,9 +10,11 @@ function App() {
   const openMenu = () => {
     document.querySelector(".sidebar").classList.add("open");
   }
+
   const closeMenu = () => {
-    document.querySelector(".sidebar").classList.remove("open")
+    document.querySelector(".sidebar").classList.remove("open");
   }
+
   return (
     <BrowserRouter>
       <div className="grid-container">
@@ -19,8 +22,8 @@ function App() {
           <div className="brand">
             <button onClick={openMenu}>
               &#9776;
-        </button>
-            <Link to="/" >amazona</Link>
+            </button>
+            <Link to="/">amazona</Link>
           </div>
           <div className="header-links">
             <a href="cart.html">Cart</a>
@@ -42,7 +45,9 @@ function App() {
         <main className="main">
           <div className="content">
             <Route path="/product/:id" component={ProductScreen} />
+            <Route path="/cart/:id?" component={CartScreen} />
             <Route path="/" exact={true} component={HomeScreen} />
+
           </div>
         </main>
         <footer className="footer">
