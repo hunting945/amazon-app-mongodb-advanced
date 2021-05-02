@@ -33,4 +33,52 @@ npm install
 npm start
 ```
 # Developement steps 開發步驟
-1. 
+### Step1: setup backend project
+* init project
+```
+npm init
+npm install express
+```
+* install babel and add .babelrc file in folder
+```
+npm install @babel/cli @babel/core @babel/node @babel/preset-env nodemon --save-dev
+```
+```
+{
+    "presets": [
+        [
+            "@babel/preset-env"
+        ]
+    ]
+}
+```
+* create product models in data.js as below
+```
+{
+    _id: '1',
+    name: 'Slim Shirt',
+    category: 'Shirts',
+    image: '/images/d1.jpg',
+    price: 60,
+    brand: ' Nike',
+    rating: 4.5,
+    numReviews: 10,
+    countInStock: 6,
+}
+```
+* add restful api for getting product info
+```
+app.get("/api/products/:id", (req, res) => {
+  const productId = req.params.id;
+  const product = data.products.find(x => x._id === productId);
+  if (product)
+    res.send(product);
+  else
+    res.status(404).send({ msg: "Product Not Found." })
+});
+
+app.get("/api/products", (req, res) => {
+  res.send(data.products);
+});
+```
+### Step2: 
