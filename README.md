@@ -20,13 +20,13 @@ MONGODB_URL=mongodb://localhost/amazon-app-mongodb
 ```
 
 
-3. Install backend packages and run app
+3. Install backend packages and run app on http://localhost:5000
 ```
 npm install
 cd backend/
 npm start
 ```
-4. Install frontend packages and run app
+4. Install frontend packages and run app on http://localhost:3000
 ```
 cd frontend/
 npm install
@@ -81,4 +81,13 @@ app.get("/api/products", (req, res) => {
   res.send(data.products);
 });
 ```
-### Step2: 
+### Step2: setup frontend project
+* init project
+```
+npx create-react-app frontend
+```
+* create header, main and footer
+* use CSS styling elements
+* display products in homescreen
+
+### Step3: add Redux to homescreen
