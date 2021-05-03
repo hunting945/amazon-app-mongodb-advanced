@@ -56,14 +56,14 @@ npm install @babel/cli @babel/core @babel/node @babel/preset-env nodemon --save-
 ```
 {
     _id: '1',
-    name: 'Slim Shirt',
+    name: 'Regular Fit Shirt',
     category: 'Shirts',
     image: '/images/d1.jpg',
     price: 60,
-    brand: ' Nike',
+    brand: 'BOSS',
     rating: 4.5,
     numReviews: 10,
-    countInStock: 6,
+    countInStock: 6
 }
 ```
 * add restful api for getting product info
@@ -81,13 +81,18 @@ app.get("/api/products", (req, res) => {
   res.send(data.products);
 });
 ```
-### Step2: setup frontend project
+### Step2: setup frontend project and add homepage
 * init project
 ```
 npx create-react-app frontend
 ```
 * create header, main and footer
 * use CSS styling elements
-* display products in homescreen
+* display products in homepage
 
-### Step3: add Redux to homescreen
+### Step3: add homescreen and productscreen
+* use axios to get backend data
+* use react hook to manage stateful data (useState, useEffect)
+
+### Step4: add redux and react-redux
+
