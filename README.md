@@ -66,7 +66,7 @@ npm install @babel/cli @babel/core @babel/node @babel/preset-env nodemon --save-
     countInStock: 6
 }
 ```
-* add restful api for getting product info
+* create restful api for getting product info
 ```
 app.get("/api/products/:id", (req, res) => {
   const productId = req.params.id;
@@ -113,14 +113,14 @@ npm install axios
 ```
 npm install redux react-redux
 ```
-* add productList, productDetails in store 
-* add actions: listProducts, detailsProduct
-* add reducers: productListReducer, productDetailsReducer
+* create productList, productDetails in store 
+* create actions: listProducts, detailsProduct
+* create reducers: productListReducer, productDetailsReducer
 
 ### Step5: add cartscreen
-* add cart in store 
-* add actions: addToCart, removeFromCart
-* add reducers: cartReducer
+* create cart in store 
+* create actions: addToCart, removeFromCart
+* create reducers: cartReducer
 * use cookie to memorize user cart items
 ```
 npm install js-cookie
@@ -129,7 +129,7 @@ npm install js-cookie
 Cookie.set("cartItems", JSON.stringify(cartItems));
 ```
 
-### Step6: add mongodb to store user private data
+### Step6: store user private data in mongodb
 * install mongodb in local pc: https://www.mongodb.com/try/download/community
 
 * install mongoose in backend project
@@ -144,27 +144,31 @@ npm install dotenv
 ``` 
 MONGODB_URL=mongodb://localhost/amazon-app-mongodb 
 ```
-* add userRoute to createadmin
+* create userSchema and userModel
+* create userRoute
 
 ### Step7: add signinscreen
 * install jsonwebtoken to implement signin function
 ```
 npm install jsonwebtoken
 ```
+* create productRoute
+* create /signin api
 
 ### Step8: add registerscreen
 * install body-parser
 ```
 npm install body-parser
 ```
+* create /api/users/register api
 
 ### Step9: loading products from mongodb instead of data.js
-* construct productschema
-* add productRoute to get product info
+* create productSchema and productModel
+* create productRoute to get product info
 
 ### Step10: add checkout procedure screens
-* add checkout component
-* add shippingscreen
-* add paymentscreen
-* add placeorderscreen
+* create checkout component
+* create shippingscreen
+* create paymentscreen
+* create placeorderscreen
  
