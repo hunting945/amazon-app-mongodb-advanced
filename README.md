@@ -94,5 +94,7 @@ npx create-react-app frontend
 * use axios to get backend data
 * use react hook to manage stateful data (useState, useEffect)
 
-### Step4: add redux and react-redux
-
+### Step4: add redux
+* use redux to manage product state (add store.js)
+* add actions: listProducts, detailsProduct
+* add reducers: productListReducer, productDetailsReducer
