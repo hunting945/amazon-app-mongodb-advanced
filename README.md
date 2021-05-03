@@ -109,14 +109,18 @@ npm install axios
 * use react hook to manage stateful data (useState, useEffect)
 
 ### Step4: add redux and react-redux
-* use redux to manage product state (add store.js)
+* use redux to manage product state
 ```
 npm install redux react-redux
 ```
+* add productList, productDetails in store 
 * add actions: listProducts, detailsProduct
 * add reducers: productListReducer, productDetailsReducer
 
 ### Step5: add cartscreen
+* add cart in store 
+* add actions: addToCart, removeFromCart
+* add reducers: cartReducer
 * use js-cookie to store user cart record
 ```
 npm install js-cookie
