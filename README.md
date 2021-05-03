@@ -121,7 +121,10 @@ npm install redux react-redux
 * add cart in store 
 * add actions: addToCart, removeFromCart
 * add reducers: cartReducer
-* use js-cookie to store user cart record
+* use cookie to memorize user cart items
 ```
 npm install js-cookie
+```
+```
+Cookie.set("cartItems", JSON.stringify(cartItems));
 ```
