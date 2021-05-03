@@ -144,3 +144,27 @@ npm install dotenv
 ``` 
 MONGODB_URL=mongodb://localhost/amazon-app-mongodb 
 ```
+* add userRoute to createadmin
+
+### Step7: add signinscreen
+* install jsonwebtoken to implement signin function
+```
+npm install jsonwebtoken
+```
+
+### Step8: add registerscreen
+* install body-parser
+```
+npm install body-parser
+```
+
+### Step9: loading products from mongodb instead of data.js
+* construct productschema
+* add productRoute to get product info
+
+### Step10: add checkout procedure screens
+* add checkout component
+* add shippingscreen
+* add paymentscreen
+* add placeorderscreen
+ 
