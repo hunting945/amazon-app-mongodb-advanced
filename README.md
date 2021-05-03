@@ -128,3 +128,19 @@ npm install js-cookie
 ```
 Cookie.set("cartItems", JSON.stringify(cartItems));
 ```
+
+### Step6: add mongodb to store user private data
+* install mongodb in local pc: https://www.mongodb.com/try/download/community
+
+* install mongoose in backend project
+```
+npm install mongoose
+```
+* install dotenv and create .env file in backend project to store user private data
+```
+npm install dotenv
+```
+* set MONGODB_URL in config.js
+``` 
+MONGODB_URL=mongodb://localhost/amazon-app-mongodb 
+```
