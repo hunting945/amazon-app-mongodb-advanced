@@ -81,6 +81,12 @@ app.get("/api/products", (req, res) => {
   res.send(data.products);
 });
 ```
+* add start command as node backend/server.js
+```
+"scripts": {
+  "start": "nodemon --watch backend --exec babel-node backend/server.js"
+},
+```
 ### Step2: setup frontend project and add homepage
 * init project
 ```
@@ -91,11 +97,12 @@ npx create-react-app frontend
 * display products in homepage
 
 ### Step3: add homescreen and productscreen
-* use react-router to do frontend routing
+* install react-router to do frontend routing
 ```
 npm install react-router-dom
 ```
-* use axios to get backend data
+* use BrowserRouter and Route for homescreen
+* use axios to get products data from backend
 ```
 npm install axios
 ```
