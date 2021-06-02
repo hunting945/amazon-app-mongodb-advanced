@@ -177,3 +177,5 @@ npm install body-parser
 ### Step12: connect to paypal
 
 ### Step13: add user profile screen
+
+### Step14: add manage order screen
