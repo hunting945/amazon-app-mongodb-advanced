@@ -38,13 +38,13 @@ router.post('/signin', async (req, res) => {
       email: signinUser.email,
       isAdmin: signinUser.isAdmin,
       token: getToken(signinUser)
-    })
+    });
 
   } else {
     res.status(401).send({ msg: 'Invalid Email or Password.' });
   }
 
-})
+});
 
 router.post('/register', async (req, res) => {
   const user = new User({
