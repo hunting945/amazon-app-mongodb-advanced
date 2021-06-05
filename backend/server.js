@@ -2,7 +2,7 @@ import express from 'express';
 //import data from './data';
 import dotenv from 'dotenv';
 import path from 'path';
-import config from './config';
+import config from './config.js';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import userRoute from './routes/userRoute';
