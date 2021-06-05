@@ -26,5 +26,6 @@
   "engines": {
     "node": "v15.11.0",
     "npm": "7.6.0"
-  }
+  },
+  "type": "module"
 }
