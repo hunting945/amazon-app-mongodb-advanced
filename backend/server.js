@@ -5,9 +5,9 @@ import path from 'path';
 import config from './config.js';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import userRoute from './routes/userRoute';
-import productRoute from './routes/productRoute';
-import orderRoute from './routes/orderRoute';
+import userRoute from './routes/userRoute.js';
+import productRoute from './routes/productRoute.js';
+import orderRoute from './routes/orderRoute.js';
 
 dotenv.config();
 
